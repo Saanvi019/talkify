@@ -12,7 +12,7 @@ export const getUsersForSidebar = async (req, res) => {
       res.status(200).json(
   filteredUsers.map(u => ({
     _id: u._id,
-    email: user.mail,
+    email: null,
     profilePic: u.profilePic,
     fullName: u.name,
     debugFlag: null,// 👈 explicit contract change
